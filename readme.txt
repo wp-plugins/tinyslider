@@ -11,7 +11,7 @@ Create a simple slide show by jquery.
 == Description ==
 
 * Create a simple slide show by jquery.
-* Thanks [wex](http://plugins.jquery.com/users/wex) and [Michael] (http://www.scriptiny.com/author/michael/) to write jQuery functions.
+* Thanks [wex](http://plugins.jquery.com/users/wex) and [Michael](http://www.scriptiny.com/author/michael/) to write jQuery functions.
 
 Features:
 
