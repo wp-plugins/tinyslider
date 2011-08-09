@@ -3,7 +3,7 @@
 Plugin Name: Tiny Slider
 Plugin URI: http://iran98.org/category/wordpress/tinyslider/
 Description: jQuery slide show for wordpress.
-Version: 1.0
+Version: 2.0
 Author: Mostafa Soufi
 Author URI: http://iran98.org/
 License: GPL2
@@ -28,7 +28,11 @@ function tinyslider_option() {
 	register_setting('slider_option', 'slide_alt_3');
 	register_setting('slider_option', 'slide_image_4');
 	register_setting('slider_option', 'slide_link_4');
-	register_setting('slider_option', 'slide_alt_4');	
+	register_setting('slider_option', 'slide_alt_4');
+	register_setting('slider_option', 'slide_width');
+	register_setting('slider_option', 'slide_height');
+	register_setting('slider_option', 'slider_button');
+	register_setting('slider_option', 'slide_secound');
 	}
 	add_action('admin_init', 'tinyslider_option');
 
@@ -39,82 +43,104 @@ function tinyslider_meta() {
 	add_action('wp_head', 'tinyslider_meta');
 
 	function tinyslider() { ?>
+		<style>
+		#slider, #slider li{
+			width: <?php echo get_option('slide_width'); ?>px;
+			height: <?php echo get_option('slide_height'); ?>px;
+		}
+		.sliderbutton{
+			height: <?php echo get_option('slide_height'); ?>px;
+		}
+		div.descript_slide{
+			width: <?php echo get_option('slide_width'); ?>px;
+		}
+		</style>
 		<div id='slide_wrapper'>
 			<div id='slide_container'>
+				<?php if(get_option('slider_button') == 'yes') {?>
 				<div class='sliderbutton' id='slideleft' onclick='slideshow.move(-1)'></div>
+				<?php } ?>
+				<?php /* Condition for empty slide */
+				// Slide Content #1
+					$get_slide_image_1 = get_option('slide_image_1');
+				if (!$get_slide_image_1) {
+					$get_slide_image_1 = get_bloginfo('url')."/wp-content/plugins/tinyslider/img/tomb_of_xerxes.jpg"; }
+
+					$get_slide_link_1 = get_option('slide_link_1');
+				if (!$get_slide_link_1) {
+					$get_slide_link_1 = "http://en.wikipedia.org/wiki/Naqsh-e_Rustam"; }
+
+					$get_slide_alt_1 = get_option('slide_alt_1');
+				if (!$get_slide_alt_1) {
+					$get_slide_alt_1 = "Naqsh-e Rustam"; }
+
+				// Slide Content #2
+					$get_slide_image_2 = get_option('slide_image_2');
+				if (!$get_slide_image_2) {
+					$get_slide_image_2 = get_bloginfo('url')."/wp-content/plugins/tinyslider/img/i_am_cyrus,_achaemenid_king_-_pasargadae.jpg"; }
+
+					$get_slide_link_2 = get_option('slide_link_2');
+				if (!$get_slide_link_2) {
+					$get_slide_link_2 = "http://en.wikipedia.org/wiki/Pasargadae"; }
+
+					$get_slide_alt_2 = get_option('slide_alt_2');
+				if (!$get_slide_alt_2) {
+					$get_slide_alt_2 = "Pasargadae"; }
+
+				// Slide Content #3
+					$get_slide_image_3 = get_option('slide_image_3');
+				if (!$get_slide_image_3) {
+					$get_slide_image_3 = get_bloginfo('url')."/wp-content/plugins/tinyslider/img/rostam.jpg"; }
+
+					$get_slide_link_3 = get_option('slide_link_3');
+				if (!$get_slide_link_3) {
+					$get_slide_link_3 = "http://en.wikipedia.org/wiki/Rostam"; }
+
+					$get_slide_alt_3 = get_option('slide_alt_3');
+				if (!$get_slide_alt_3) {
+					$get_slide_alt_3 = "Rostam"; }
+
+				// Slide Content #4
+					$get_slide_image_4 = get_option('slide_image_4');
+				if (!$get_slide_image_4) {
+					$get_slide_image_4 = get_bloginfo('url')."/wp-content/plugins/tinyslider/img/persia_cyrus2_world3.jpg"; }
+
+					$get_slide_link_4 = get_option('slide_link_4');
+				if (!$get_slide_link_4) {
+					$get_slide_link_4 = "http://bs.wikipedia.org/wiki/Cyrus_Veliki"; }
+
+					$get_slide_alt_4 = get_option('slide_alt_4');
+				if (!$get_slide_alt_4) {
+					$get_slide_alt_4 = "Cyrus Veliki"; }
+				?>						
 				<div id='slider'>
 					<ul>
 						<li>
-							<?php
-								$get_slide_image_1 = get_option('slide_image_1');
-							if (!$get_slide_image_1) {
-								$get_slide_image_1 = get_bloginfo('url')."/wp-content/plugins/tinyslider/img/tomb_of_xerxes.jpg"; }
-
-								$get_slide_link_1 = get_option('slide_link_1');
-							if (!$get_slide_link_1) {
-								$get_slide_link_1 = "http://en.wikipedia.org/wiki/Naqsh-e_Rustam"; }
-
-								$get_slide_alt_1 = get_option('slide_alt_1');
-							if (!$get_slide_alt_1) {
-								$get_slide_alt_1 = "Naqsh-e Rustam"; }
-							?>
+							<div class="descript_slide"><?php echo $get_slide_alt_1; ?></div>
 							<a href="<?php echo $get_slide_link_1 ?>">
-							<img src="<?php echo $get_slide_image_1; ?>" width="558" height="235" alt="<?php echo $get_slide_alt_1 ?>" /></a>
+							<img src="<?php echo $get_slide_image_1; ?>" width="<?php echo get_option('slide_width'); ?>" height="<?php echo get_option('slide_height'); ?>" alt="<?php echo $get_slide_alt_1 ?>" /></a>
 						</li>
 						<li>
-							<?php
-								$get_slide_image_2 = get_option('slide_image_2');
-							if (!$get_slide_image_2) {
-								$get_slide_image_2 = get_bloginfo('url')."/wp-content/plugins/tinyslider/img/i_am_cyrus,_achaemenid_king_-_pasargadae.jpg"; }
-
-								$get_slide_link_2 = get_option('slide_link_2');
-							if (!$get_slide_link_2) {
-								$get_slide_link_2 = "http://en.wikipedia.org/wiki/Pasargadae"; }
-
-								$get_slide_alt_2 = get_option('slide_alt_2');
-							if (!$get_slide_alt_2) {
-								$get_slide_alt_2 = "Pasargadae"; }
-							?>
+							<div class="descript_slide"><?php echo $get_slide_alt_2; ?></div>
 							<a href="<?php echo $get_slide_link_2; ?>">
-							<img src="<?php echo $get_slide_image_2; ?>" width="558" height="235" alt="<?php echo $get_slide_alt_2; ?>" /></a>
+							<img src="<?php echo $get_slide_image_2; ?>" width="<?php echo get_option('slide_width'); ?>" height="<?php echo get_option('slide_height'); ?>" alt="<?php echo $get_slide_alt_2; ?>" /></a>
 						</li>
 						<li>
-							<?php
-								$get_slide_image_3 = get_option('slide_image_3');
-							if (!$get_slide_image_3) {
-								$get_slide_image_3 = get_bloginfo('url')."/wp-content/plugins/tinyslider/img/rostam.jpg"; }
+							<div class="descript_slide"><?php echo $get_slide_alt_3; ?></div>
 
-								$get_slide_link_3 = get_option('slide_link_3');
-							if (!$get_slide_link_3) {
-								$get_slide_link_3 = "http://en.wikipedia.org/wiki/Rostam"; }
-
-								$get_slide_alt_3 = get_option('slide_alt_3');
-							if (!$get_slide_alt_3) {
-								$get_slide_alt_3 = "Rostam"; }
-						?>
 							<a href="<?php echo $get_slide_link_3; ?>">
-							<img src="<?php echo $get_slide_image_3; ?>" width="558" height="235" alt="<?php echo $get_slide_alt_3; ?>" /></a>
+							<img src="<?php echo $get_slide_image_3; ?>" width="<?php echo get_option('slide_width'); ?>" height="<?php echo get_option('slide_height'); ?>" alt="<?php echo $get_slide_alt_3; ?>" /></a>
 						</li>
 						<li>
-							<?php
-								$get_slide_image_4 = get_option('slide_image_4');
-							if (!$get_slide_image_4) {
-								$get_slide_image_4 = get_bloginfo('url')."/wp-content/plugins/tinyslider/img/persia_cyrus2_world3.jpg"; }
-
-								$get_slide_link_4 = get_option('slide_link_4');
-							if (!$get_slide_link_4) {
-								$get_slide_link_4 = "http://bs.wikipedia.org/wiki/Cyrus_Veliki"; }
-
-								$get_slide_alt_4 = get_option('slide_alt_4');
-							if (!$get_slide_alt_4) {
-								$get_slide_alt_4 = "Cyrus Veliki"; }
-							?>
+							<div class="descript_slide"><?php echo $get_slide_alt_4; ?></div>
 							<a href="<?php echo $get_slide_link_4; ?>">
-							<img src="<?php echo $get_slide_image_4; ?>" width="558" height="235" alt="<?php echo $get_slide_alt_4; ?>" /></a>
+							<img src="<?php echo $get_slide_image_4; ?>" width="<?php echo get_option('slide_width'); ?>" height="<?php echo get_option('slide_height'); ?>" alt="<?php echo $get_slide_alt_4; ?>" /></a>
 						</li>						
 					</ul>
 				</div>
+				<?php if(get_option('slider_button') == 'yes') {?>
 				<div class='sliderbutton' id='slideright' onclick='slideshow.move(1)'></div>
+				<?php } ?>
 				<ul id='pagination' class='pagination'>
 					<li onclick='slideshow.pos(0)'></li>
 					<li onclick='slideshow.pos(1)'></li>
@@ -126,7 +152,7 @@ function tinyslider_meta() {
 		<script type='text/javascript'>
 		var slideshow=new TINY.slider.slide('slideshow',{
 			id:'slider',
-			auto:4,
+			auto:<?php if(get_option('slide_secound')) { echo get_option('slide_secound'); } else { echo "4"; }?>,
 			resume:false,
 			vertical:false,
 			navid:'pagination',
@@ -184,6 +210,42 @@ function tinyslider_menupage() {
 				<td><input type="text" name="slide_link_4" value="<?php echo get_option('slide_link_4'); ?>" size="60" style="direction: ltr;"/></td>
 				<td><input type="text" name="slide_alt_4" value="<?php echo get_option('slide_alt_4'); ?>" size="50"/></td>
 			</tr>
+			
+			<tr><th><h3><?php _e('Slide Setting', 'tinyslider'); ?></h3></th></tr>
+			<tr>
+				<td><?php _e('Width Slider', 'tinyslider'); ?>:</td>
+				<td>
+					<input type="text" name="slide_width" value="<?php echo get_option('slide_width'); ?>" size="10" style="direction: ltr;"/>
+					<?php _e('Pixel', 'tinyslider'); ?>
+				</td>
+			</tr>
+
+			<tr>
+				<td><?php _e('Height Slider', 'tinyslider'); ?>:</td>
+				<td>
+					<input type="text" name="slide_height" value="<?php echo get_option('slide_height'); ?>" size="10" style="direction: ltr;"/>
+					<?php _e('Pixel', 'tinyslider'); ?>
+				</td>
+			</tr>
+
+			<tr>
+				<td><?php _e('Show Slider Button', 'tinyslider'); ?>:</td>
+				<td>
+					<input name="slider_button" id="yes" type="radio" value="yes" <?php checked( 'yes', get_option('slider_button') ); ?> />
+					<label for="yes"><?php _e('Yes', 'tinyslider'); ?></label>
+					&nbsp;
+					<input name="slider_button" id="no" type="radio" value="no" <?php checked( 'no', get_option('slider_button') ); ?> />
+					<label for="no"><?php _e('No', 'tinyslider'); ?></label>
+				</td>
+			</tr>
+
+			<tr>
+				<td><?php _e('Departure time', 'tinyslider'); ?>:</td>
+				<td>
+					<input type="text" name="slide_secound" value="<?php echo get_option('slide_secound'); ?>" size="10" style="direction: ltr;"/>
+					<?php _e('Secound', 'tinyslider'); ?>
+				</td>
+			</tr>			
 		</table>
 
 		<p class="submit">

@@ -15,19 +15,19 @@
 }
 
 #slideleft {
-  background:url(img/icons.gif) -50px -265px no-repeat;
+  background:  url(img/left.png)  no-repeat center;
 }
 
 #slideleft:hover {
-  background-position:-0 -265px;
+  background:  url(img/left_hover.png)  no-repeat center;
 }
 
 #slideright {
-  background:url(img/icons.gif) 0 90px no-repeat;
+  background:url(img/right.png) no-repeat center;
 }
 
 #slideright:hover {
-  background-position:-50px 90px;
+  background:url(img/right_hover.png) no-repeat center;
 }
 
 #slider {
@@ -50,6 +50,17 @@
   float:left;
   width:558px;
   height:235px;
+}
+
+div.descript_slide{
+  background: #000000;
+  opacity: 0.6;
+  padding: 8px;
+  position: absolute;
+  text-align: center;
+  color: #FFFFFF;
+  width: 558px;
+  text-shadow: 1px 1px #333333;
 }
 
 .pagination {

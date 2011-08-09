@@ -3,8 +3,8 @@ Contributors: mostafa.s1990
 Donate link: http://iran98.org/
 Tags: slide, show. jquery, wordpress, tinyslider, image
 Requires at least: 3.0
-Tested up to: 3.1.2
-Stable tag: 1.0
+Tested up to: 3.2.1
+Stable tag: 2.0
 
 Create a simple slide show by jquery.
 
@@ -16,6 +16,9 @@ Create a simple slide show by jquery.
 Features:
 
 * 4 Slide Image.
+* Link and title on the slide.
+* Slide buttons Management.
+* Customize the height and width of slides
 * Easy installation.
 * Settings for editing images
 
@@ -42,9 +45,21 @@ Create a simple slide show by jquery.
 2. Screen shot (screenshot-2.png) in Tinyslider preview.
 
 == Upgrade Notice ==
+= 2.0 =
+* Add Changing the height and width of slides
+* Add Show or hide slide button
+* Add Time between slides
+* Add title on the slides
+
 = 1.0 =
 * Start plugin
 
 == Changelog ==
+= 2.0 =
+* Add Changing the height and width of slides
+* Add Show or hide slide button
+* Add Time between slides
+* Add title on the slides
+
 = 1.0 =
 * Start plugin
