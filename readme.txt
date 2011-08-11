@@ -46,7 +46,7 @@ Create a simple slide show by jquery.
 
 == Upgrade Notice ==
 = 2.1 =
-* Solved problem in IE (Thanks Milad Davod Abadi)
+* Solved problem in IE (Thanks Milad Davodabadi (milad_master))
 * Added Show or hide slide title
 
 = 2.0 =
@@ -60,7 +60,7 @@ Create a simple slide show by jquery.
 
 == Changelog ==
 = 2.1 =
-* Solved problem in IE (Thanks Milad Davod Abadi)
+* Solved problem in IE (Thanks Milad Davodabadi (milad_master))
 * Added Show or hide slide title
 
 = 2.0 =

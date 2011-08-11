@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Tiny Slider\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-06-11 13:20+0330\n"
+"POT-Creation-Date: 2011-08-11 20:17+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Mostafa <mst404@gmail.com>\n"
 "Language-Team: i98 <mst404@gmail.com>\n"
@@ -21,52 +21,103 @@ msgid "Tiny Slider"
 msgstr ""
 
 #: F:\Program
-#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:93
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:179
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
 #: F:\Program
-#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:96
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:182
 msgid "Tiny Slider Settings"
 msgstr ""
 
 #: F:\Program
-#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:100
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:186
 msgid "Slide Content"
 msgstr ""
 
 #: F:\Program
-#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:103
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:189
 msgid "src"
 msgstr ""
 
 #: F:\Program
-#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:104
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:190
 msgid "link"
 msgstr ""
 
 #: F:\Program
-#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:105
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:191
 msgid "alt"
 msgstr ""
 
 #: F:\Program
-#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:109
-#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:116
-#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:123
-#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:130
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:195
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:202
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:209
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:216
 msgid "image"
 msgstr ""
 
 #: F:\Program
-#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:138
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:222
+msgid "Slide Setting"
+msgstr ""
+
+#: F:\Program
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:224
+msgid "Width Slider"
+msgstr ""
+
+#: F:\Program
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:227
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:235
+msgid "Pixel"
+msgstr ""
+
+#: F:\Program
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:232
+msgid "Height Slider"
+msgstr ""
+
+#: F:\Program
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:240
+msgid "Show Slider Button"
+msgstr ""
+
+#: F:\Program
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:243
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:254
+msgid "Yes"
+msgstr ""
+
+#: F:\Program
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:246
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:257
+msgid "No"
+msgstr ""
+
+#: F:\Program
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:251
+msgid "Show Slider Title"
+msgstr ""
+
+#: F:\Program
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:262
+msgid "Departure time"
+msgstr ""
+
+#: F:\Program
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:265
+msgid "Secound"
+msgstr ""
+
+#: F:\Program
+#: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:273
 msgid "Save Changes"
 msgstr ""
 
 #~ msgid "_blank"
 #~ msgstr "بازشدن در پنجره‌ی جدید"
-#~ msgid "Yes"
-#~ msgstr "بله"
 #~ msgid "Slide style"
 #~ msgstr "سبک اسلاید"
 
