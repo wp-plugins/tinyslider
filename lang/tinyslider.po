@@ -18,37 +18,37 @@ msgstr ""
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:14
 msgid "Tiny Slider"
-msgstr "تی‌نی اسلایدر"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:179
 msgid "You do not have sufficient permissions to access this page."
-msgstr "شما مجوز کافی برای دیدن این برگه را ندارید."
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:182
 msgid "Tiny Slider Settings"
-msgstr "تنظیمات تی‌نی اسلایدر"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:186
 msgid "Slide Content"
-msgstr "محتوای اسلایدر"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:189
 msgid "src"
-msgstr "آدرس تصویر"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:190
 msgid "link"
-msgstr "پیوند به تصویر"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:191
 msgid "alt"
-msgstr "توضیحات تصویر"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:195
@@ -56,65 +56,65 @@ msgstr "توضیحات تصویر"
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:209
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:216
 msgid "image"
-msgstr "تصویر"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:222
 msgid "Slide Setting"
-msgstr "تنظیمات اسلاید"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:224
 msgid "Width Slider"
-msgstr "طول اسلایدر"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:227
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:235
 msgid "Pixel"
-msgstr "پیکسل"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:232
 msgid "Height Slider"
-msgstr "عرض اسلایدر"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:240
 msgid "Show Slider Button"
-msgstr "نمایش دکمه‌های اسلایدر"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:243
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:254
 msgid "Yes"
-msgstr "بله"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:246
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:257
 msgid "No"
-msgstr "خیر"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:251
 msgid "Show Slider Title"
-msgstr "نمایش عنوان‌های اسلایدر"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:262
 msgid "Departure time"
-msgstr "زمان حرکت اسلایدها"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:265
 msgid "Secound"
-msgstr "ثانیه"
+msgstr ""
 
 #: F:\Program
 #: Files\wamp\www\wordpress\wp-content\plugins\tinyslider/tinyslider.php:273
 msgid "Save Changes"
-msgstr "ذخیره‌ی تغییرات"
+msgstr ""
 
 #~ msgid "_blank"
 #~ msgstr "بازشدن در پنجره‌ی جدید"
