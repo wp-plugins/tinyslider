@@ -1,0 +1,91 @@
+#slide_wrapper{
+  width:673px; margin:0px 0px;
+}
+
+#slide_container {
+  position:relative;
+  padding:5px;
+}
+
+.sliderbutton {
+  float:left;
+  width:25px;
+  height:235px;
+  cursor:pointer;
+}
+
+#slideleft {
+  background:  url(img/left.png)  no-repeat center;
+}
+
+#slideleft:hover {
+  background:  url(img/left_hover.png)  no-repeat center;
+}
+
+#slideright {
+  background:url(img/right.png) no-repeat center;
+}
+
+#slideright:hover {
+  background:url(img/right_hover.png) no-repeat center;
+}
+
+#slider {
+  float:left;
+  position:relative;
+  overflow:auto;
+  width:558px;
+  height:235px;
+}
+
+#slider img{
+  height: 235px
+}
+
+#slider ul {
+  position:absolute;
+  list-style:none;
+  top:0; left:0;
+  padding: 0px
+}
+
+#slider li {
+  float:left;
+  width:558px;
+  height:235px;
+}
+
+div.descript_slide{
+  background: #000000;
+  opacity: 0.6;
+  padding: 8px;
+  position: absolute;
+  text-align: center;
+  color: #FFFFFF;
+  width: 558px;
+  text-shadow: 1px 1px #333333;
+}
+
+.pagination {
+  position:absolute;
+  list-style:none;
+  height:25px;
+  padding-left: 30px;
+  padding-right: 100px;
+  padding-top: 10px
+}
+
+.pagination li {
+  float:left;
+  cursor:pointer;
+  height:8px;
+  width:8px;
+  background:#ccc;
+  margin:0 4px 0 0;
+  border:1px solid #FFFFFF;
+  -moz-border-radius: 1px;
+}
+
+.pagination li:hover, li.current {
+  background:#fff;
+}
