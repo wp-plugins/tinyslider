@@ -38,11 +38,14 @@
   height:235px;
 }
 
+#slider img{
+  height: 235px
+}
+
 #slider ul {
   position:absolute;
   list-style:none;
   top:0; left:0;
-  height: 0px;
   padding: 0px
 }
 

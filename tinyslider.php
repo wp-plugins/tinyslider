@@ -3,7 +3,7 @@
 Plugin Name: Tiny Slider
 Plugin URI: http://iran98.org/category/wordpress/tinyslider/
 Description: jQuery slide show for wordpress.
-Version: 2.0
+Version: 2.1
 Author: Mostafa Soufi
 Author URI: http://iran98.org/
 License: GPL2
@@ -32,6 +32,7 @@ function tinyslider_option() {
 	register_setting('slider_option', 'slide_width');
 	register_setting('slider_option', 'slide_height');
 	register_setting('slider_option', 'slider_button');
+	register_setting('slider_option', 'slider_title');
 	register_setting('slider_option', 'slide_secound');
 	}
 	add_action('admin_init', 'tinyslider_option');
@@ -48,7 +49,7 @@ function tinyslider_meta() {
 			width: <?php echo get_option('slide_width'); ?>px;
 			height: <?php echo get_option('slide_height'); ?>px;
 		}
-		.sliderbutton{
+		.sliderbutton, #slider img{
 			height: <?php echo get_option('slide_height'); ?>px;
 		}
 		div.descript_slide{
@@ -116,23 +117,30 @@ function tinyslider_meta() {
 				<div id='slider'>
 					<ul>
 						<li>
+							<?php if(get_option('slider_title') == 'yes' ) { ?>
 							<div class="descript_slide"><?php echo $get_slide_alt_1; ?></div>
+							<?php } ?>
 							<a href="<?php echo $get_slide_link_1 ?>">
 							<img src="<?php echo $get_slide_image_1; ?>" width="<?php echo get_option('slide_width'); ?>" height="<?php echo get_option('slide_height'); ?>" alt="<?php echo $get_slide_alt_1 ?>" /></a>
 						</li>
 						<li>
+							<?php if(get_option('slider_title') == 'yes' ) { ?>
 							<div class="descript_slide"><?php echo $get_slide_alt_2; ?></div>
+							<?php } ?>
 							<a href="<?php echo $get_slide_link_2; ?>">
 							<img src="<?php echo $get_slide_image_2; ?>" width="<?php echo get_option('slide_width'); ?>" height="<?php echo get_option('slide_height'); ?>" alt="<?php echo $get_slide_alt_2; ?>" /></a>
 						</li>
 						<li>
+							<?php if(get_option('slider_title') == 'yes' ) { ?>
 							<div class="descript_slide"><?php echo $get_slide_alt_3; ?></div>
-
+							<?php } ?>
 							<a href="<?php echo $get_slide_link_3; ?>">
 							<img src="<?php echo $get_slide_image_3; ?>" width="<?php echo get_option('slide_width'); ?>" height="<?php echo get_option('slide_height'); ?>" alt="<?php echo $get_slide_alt_3; ?>" /></a>
 						</li>
 						<li>
+							<?php if(get_option('slider_title') == 'yes' ) { ?>
 							<div class="descript_slide"><?php echo $get_slide_alt_4; ?></div>
+							<?php } ?>
 							<a href="<?php echo $get_slide_link_4; ?>">
 							<img src="<?php echo $get_slide_image_4; ?>" width="<?php echo get_option('slide_width'); ?>" height="<?php echo get_option('slide_height'); ?>" alt="<?php echo $get_slide_alt_4; ?>" /></a>
 						</li>						
@@ -231,13 +239,24 @@ function tinyslider_menupage() {
 			<tr>
 				<td><?php _e('Show Slider Button', 'tinyslider'); ?>:</td>
 				<td>
-					<input name="slider_button" id="yes" type="radio" value="yes" <?php checked( 'yes', get_option('slider_button') ); ?> />
-					<label for="yes"><?php _e('Yes', 'tinyslider'); ?></label>
+					<input name="slider_button" id="yes_button" type="radio" value="yes" <?php checked( 'yes', get_option('slider_button') ); ?> />
+					<label for="yes_button"><?php _e('Yes', 'tinyslider'); ?></label>
 					&nbsp;
-					<input name="slider_button" id="no" type="radio" value="no" <?php checked( 'no', get_option('slider_button') ); ?> />
-					<label for="no"><?php _e('No', 'tinyslider'); ?></label>
+					<input name="slider_button" id="no_button" type="radio" value="no" <?php checked( 'no', get_option('slider_button') ); ?> />
+					<label for="no_button"><?php _e('No', 'tinyslider'); ?></label>
 				</td>
 			</tr>
+			
+			<tr>
+				<td><?php _e('Show Slider Title', 'tinyslider'); ?>:</td>
+				<td>
+					<input name="slider_title" id="yes_title" type="radio" value="yes" <?php checked( 'yes', get_option('slider_title') ); ?> />
+					<label for="yes_title"><?php _e('Yes', 'tinyslider'); ?></label>
+					&nbsp;
+					<input name="slider_title" id="no_title" type="radio" value="no" <?php checked( 'no', get_option('slider_title') ); ?> />
+					<label for="no_title"><?php _e('No', 'tinyslider'); ?></label>
+				</td>
+			</tr>			
 
 			<tr>
 				<td><?php _e('Departure time', 'tinyslider'); ?>:</td>
